@@ -1,0 +1,6 @@
+package com.android.volley.toolbox;
+
+public interface UrlRewriter {
+    String rewriteUrl(String arg1);
+}
+

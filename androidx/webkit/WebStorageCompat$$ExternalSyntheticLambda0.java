@@ -1,0 +1,11 @@
+package androidx.webkit;
+
+import java.util.concurrent.Executor;
+
+public final class WebStorageCompat..ExternalSyntheticLambda0 implements Executor {
+    @Override
+    public final void execute(Runnable runnable0) {
+        WebStorageCompat.lambda$deleteBrowsingDataForSite$1(runnable0);
+    }
+}
+

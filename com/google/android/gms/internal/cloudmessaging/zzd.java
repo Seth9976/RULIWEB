@@ -1,0 +1,10 @@
+package com.google.android.gms.internal.cloudmessaging;
+
+final class zzd implements zzb {
+    private zzd() {
+    }
+
+    zzd(zzc zzc0) {
+    }
+}
+

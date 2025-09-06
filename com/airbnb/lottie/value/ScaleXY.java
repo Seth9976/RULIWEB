@@ -1,0 +1,38 @@
+package com.airbnb.lottie.value;
+
+public class ScaleXY {
+    private float scaleX;
+    private float scaleY;
+
+    public ScaleXY() {
+        this(1.0f, 1.0f);
+    }
+
+    public ScaleXY(float f, float f1) {
+        this.scaleX = f;
+        this.scaleY = f1;
+    }
+
+    public boolean equals(float f, float f1) {
+        return this.scaleX == f && this.scaleY == f1;
+    }
+
+    public float getScaleX() {
+        return this.scaleX;
+    }
+
+    public float getScaleY() {
+        return this.scaleY;
+    }
+
+    public void set(float f, float f1) {
+        this.scaleX = f;
+        this.scaleY = f1;
+    }
+
+    @Override
+    public String toString() {
+        return this.getScaleX() + "x" + this.getScaleY();
+    }
+}
+

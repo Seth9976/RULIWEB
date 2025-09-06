@@ -1,0 +1,10 @@
+package com.android.volley;
+
+public interface RetryPolicy {
+    int getCurrentRetryCount();
+
+    int getCurrentTimeout();
+
+    void retry(VolleyError arg1) throws VolleyError;
+}
+

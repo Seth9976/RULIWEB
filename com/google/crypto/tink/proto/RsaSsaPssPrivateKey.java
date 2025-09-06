@@ -1,0 +1,570 @@
+package com.google.crypto.tink.proto;
+
+import com.google.crypto.tink.shaded.protobuf.AbstractMessageLite;
+import com.google.crypto.tink.shaded.protobuf.ByteString;
+import com.google.crypto.tink.shaded.protobuf.CodedInputStream;
+import com.google.crypto.tink.shaded.protobuf.ExtensionRegistryLite;
+import com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite.DefaultInstanceBasedParser;
+import com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite.MethodToInvoke;
+import com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite;
+import com.google.crypto.tink.shaded.protobuf.InvalidProtocolBufferException;
+import com.google.crypto.tink.shaded.protobuf.MessageLite;
+import com.google.crypto.tink.shaded.protobuf.Parser;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+
+public final class RsaSsaPssPrivateKey extends GeneratedMessageLite implements RsaSsaPssPrivateKeyOrBuilder {
+    public static final class Builder extends com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite.Builder implements RsaSsaPssPrivateKeyOrBuilder {
+        private Builder() {
+            super(RsaSsaPssPrivateKey.DEFAULT_INSTANCE);
+        }
+
+        Builder(com.google.crypto.tink.proto.RsaSsaPssPrivateKey.1 rsaSsaPssPrivateKey$10) {
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public MessageLite build() {
+            return super.build();
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public MessageLite buildPartial() {
+            return super.buildPartial();
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder clear() {
+            return super.clear();
+        }
+
+        public Builder clearCrt() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearCrt();
+            return this;
+        }
+
+        public Builder clearD() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearD();
+            return this;
+        }
+
+        public Builder clearDp() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearDp();
+            return this;
+        }
+
+        public Builder clearDq() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearDq();
+            return this;
+        }
+
+        public Builder clearP() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearP();
+            return this;
+        }
+
+        public Builder clearPublicKey() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearPublicKey();
+            return this;
+        }
+
+        public Builder clearQ() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearQ();
+            return this;
+        }
+
+        public Builder clearVersion() {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).clearVersion();
+            return this;
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.AbstractMessageLite.Builder clone() {
+            return super.clone();
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder clone() {
+            return super.clone();
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public Object clone() throws CloneNotSupportedException {
+            return super.clone();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public ByteString getCrt() {
+            return ((RsaSsaPssPrivateKey)this.instance).getCrt();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public ByteString getD() {
+            return ((RsaSsaPssPrivateKey)this.instance).getD();
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder, com.google.crypto.tink.shaded.protobuf.MessageLiteOrBuilder
+        public MessageLite getDefaultInstanceForType() {
+            return super.getDefaultInstanceForType();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public ByteString getDp() {
+            return ((RsaSsaPssPrivateKey)this.instance).getDp();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public ByteString getDq() {
+            return ((RsaSsaPssPrivateKey)this.instance).getDq();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public ByteString getP() {
+            return ((RsaSsaPssPrivateKey)this.instance).getP();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public RsaSsaPssPublicKey getPublicKey() {
+            return ((RsaSsaPssPrivateKey)this.instance).getPublicKey();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public ByteString getQ() {
+            return ((RsaSsaPssPrivateKey)this.instance).getQ();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public int getVersion() {
+            return ((RsaSsaPssPrivateKey)this.instance).getVersion();
+        }
+
+        @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+        public boolean hasPublicKey() {
+            return ((RsaSsaPssPrivateKey)this.instance).hasPublicKey();
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        protected com.google.crypto.tink.shaded.protobuf.AbstractMessageLite.Builder internalMergeFrom(AbstractMessageLite abstractMessageLite0) {
+            return super.internalMergeFrom(((GeneratedMessageLite)abstractMessageLite0));
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.AbstractMessageLite.Builder mergeFrom(CodedInputStream codedInputStream0, ExtensionRegistryLite extensionRegistryLite0) throws IOException {
+            return super.mergeFrom(codedInputStream0, extensionRegistryLite0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.AbstractMessageLite.Builder mergeFrom(byte[] arr_b, int v, int v1) throws InvalidProtocolBufferException {
+            return super.mergeFrom(arr_b, v, v1);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.AbstractMessageLite.Builder mergeFrom(byte[] arr_b, int v, int v1, ExtensionRegistryLite extensionRegistryLite0) throws InvalidProtocolBufferException {
+            return super.mergeFrom(arr_b, v, v1, extensionRegistryLite0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(ByteString byteString0) throws InvalidProtocolBufferException {
+            return super.mergeFrom(byteString0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(ByteString byteString0, ExtensionRegistryLite extensionRegistryLite0) throws InvalidProtocolBufferException {
+            return super.mergeFrom(byteString0, extensionRegistryLite0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(CodedInputStream codedInputStream0) throws IOException {
+            return super.mergeFrom(codedInputStream0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(CodedInputStream codedInputStream0, ExtensionRegistryLite extensionRegistryLite0) throws IOException {
+            return super.mergeFrom(codedInputStream0, extensionRegistryLite0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(MessageLite messageLite0) {
+            return super.mergeFrom(messageLite0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(InputStream inputStream0) throws IOException {
+            return super.mergeFrom(inputStream0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(InputStream inputStream0, ExtensionRegistryLite extensionRegistryLite0) throws IOException {
+            return super.mergeFrom(inputStream0, extensionRegistryLite0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(byte[] arr_b) throws InvalidProtocolBufferException {
+            return super.mergeFrom(arr_b);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(byte[] arr_b, int v, int v1) throws InvalidProtocolBufferException {
+            return super.mergeFrom(arr_b, v, v1);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(byte[] arr_b, int v, int v1, ExtensionRegistryLite extensionRegistryLite0) throws InvalidProtocolBufferException {
+            return super.mergeFrom(arr_b, v, v1, extensionRegistryLite0);
+        }
+
+        @Override  // com.google.crypto.tink.shaded.protobuf.AbstractMessageLite$Builder
+        public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder mergeFrom(byte[] arr_b, ExtensionRegistryLite extensionRegistryLite0) throws InvalidProtocolBufferException {
+            return super.mergeFrom(arr_b, extensionRegistryLite0);
+        }
+
+        public Builder mergePublicKey(RsaSsaPssPublicKey rsaSsaPssPublicKey0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).mergePublicKey(rsaSsaPssPublicKey0);
+            return this;
+        }
+
+        public Builder setCrt(ByteString byteString0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setCrt(byteString0);
+            return this;
+        }
+
+        public Builder setD(ByteString byteString0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setD(byteString0);
+            return this;
+        }
+
+        public Builder setDp(ByteString byteString0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setDp(byteString0);
+            return this;
+        }
+
+        public Builder setDq(ByteString byteString0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setDq(byteString0);
+            return this;
+        }
+
+        public Builder setP(ByteString byteString0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setP(byteString0);
+            return this;
+        }
+
+        public Builder setPublicKey(com.google.crypto.tink.proto.RsaSsaPssPublicKey.Builder rsaSsaPssPublicKey$Builder0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setPublicKey(((RsaSsaPssPublicKey)rsaSsaPssPublicKey$Builder0.build()));
+            return this;
+        }
+
+        public Builder setPublicKey(RsaSsaPssPublicKey rsaSsaPssPublicKey0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setPublicKey(rsaSsaPssPublicKey0);
+            return this;
+        }
+
+        public Builder setQ(ByteString byteString0) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setQ(byteString0);
+            return this;
+        }
+
+        public Builder setVersion(int v) {
+            this.copyOnWrite();
+            ((RsaSsaPssPrivateKey)this.instance).setVersion(v);
+            return this;
+        }
+    }
+
+    public static final int CRT_FIELD_NUMBER = 8;
+    private static final RsaSsaPssPrivateKey DEFAULT_INSTANCE = null;
+    public static final int DP_FIELD_NUMBER = 6;
+    public static final int DQ_FIELD_NUMBER = 7;
+    public static final int D_FIELD_NUMBER = 3;
+    private static volatile Parser PARSER = null;
+    public static final int PUBLIC_KEY_FIELD_NUMBER = 2;
+    public static final int P_FIELD_NUMBER = 4;
+    public static final int Q_FIELD_NUMBER = 5;
+    public static final int VERSION_FIELD_NUMBER = 1;
+    private ByteString crt_;
+    private ByteString d_;
+    private ByteString dp_;
+    private ByteString dq_;
+    private ByteString p_;
+    private RsaSsaPssPublicKey publicKey_;
+    private ByteString q_;
+    private int version_;
+
+    static {
+        RsaSsaPssPrivateKey rsaSsaPssPrivateKey0 = new RsaSsaPssPrivateKey();
+        RsaSsaPssPrivateKey.DEFAULT_INSTANCE = rsaSsaPssPrivateKey0;
+        GeneratedMessageLite.registerDefaultInstance(RsaSsaPssPrivateKey.class, rsaSsaPssPrivateKey0);
+    }
+
+    private RsaSsaPssPrivateKey() {
+        this.d_ = ByteString.EMPTY;
+        this.p_ = ByteString.EMPTY;
+        this.q_ = ByteString.EMPTY;
+        this.dp_ = ByteString.EMPTY;
+        this.dq_ = ByteString.EMPTY;
+        this.crt_ = ByteString.EMPTY;
+    }
+
+    private void clearCrt() {
+        this.crt_ = RsaSsaPssPrivateKey.getDefaultInstance().getCrt();
+    }
+
+    private void clearD() {
+        this.d_ = RsaSsaPssPrivateKey.getDefaultInstance().getD();
+    }
+
+    private void clearDp() {
+        this.dp_ = RsaSsaPssPrivateKey.getDefaultInstance().getDp();
+    }
+
+    private void clearDq() {
+        this.dq_ = RsaSsaPssPrivateKey.getDefaultInstance().getDq();
+    }
+
+    private void clearP() {
+        this.p_ = RsaSsaPssPrivateKey.getDefaultInstance().getP();
+    }
+
+    private void clearPublicKey() {
+        this.publicKey_ = null;
+    }
+
+    private void clearQ() {
+        this.q_ = RsaSsaPssPrivateKey.getDefaultInstance().getQ();
+    }
+
+    private void clearVersion() {
+        this.version_ = 0;
+    }
+
+    @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite
+    protected final Object dynamicMethod(MethodToInvoke generatedMessageLite$MethodToInvoke0, Object object0, Object object1) {
+        switch(com.google.crypto.tink.proto.RsaSsaPssPrivateKey.1.$SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke[generatedMessageLite$MethodToInvoke0.ordinal()]) {
+            case 1: {
+                return new RsaSsaPssPrivateKey();
+            }
+            case 2: {
+                return new Builder(null);
+            }
+            case 3: {
+                return RsaSsaPssPrivateKey.newMessageInfo(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, "\u0000\b\u0000\u0000\u0001\b\b\u0000\u0000\u0000\u0001\u000B\u0002\t\u0003\n\u0004\n\u0005\n\u0006\n\u0007\n\b\n", new Object[]{"version_", "publicKey_", "d_", "p_", "q_", "dp_", "dq_", "crt_"});
+            }
+            case 4: {
+                return RsaSsaPssPrivateKey.DEFAULT_INSTANCE;
+            }
+            case 5: {
+                Parser parser0 = RsaSsaPssPrivateKey.PARSER;
+                if(parser0 == null) {
+                    Class class0 = RsaSsaPssPrivateKey.class;
+                    synchronized(class0) {
+                        Parser parser1 = RsaSsaPssPrivateKey.PARSER;
+                        if(parser1 == null) {
+                            parser1 = new DefaultInstanceBasedParser(RsaSsaPssPrivateKey.DEFAULT_INSTANCE);
+                            RsaSsaPssPrivateKey.PARSER = parser1;
+                        }
+                        return parser1;
+                    }
+                }
+                return parser0;
+            }
+            case 6: {
+                return (byte)1;
+            }
+            case 7: {
+                return null;
+            }
+            default: {
+                throw new UnsupportedOperationException();
+            }
+        }
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public ByteString getCrt() {
+        return this.crt_;
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public ByteString getD() {
+        return this.d_;
+    }
+
+    public static RsaSsaPssPrivateKey getDefaultInstance() {
+        return RsaSsaPssPrivateKey.DEFAULT_INSTANCE;
+    }
+
+    @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite, com.google.crypto.tink.shaded.protobuf.MessageLiteOrBuilder
+    public MessageLite getDefaultInstanceForType() {
+        return super.getDefaultInstanceForType();
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public ByteString getDp() {
+        return this.dp_;
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public ByteString getDq() {
+        return this.dq_;
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public ByteString getP() {
+        return this.p_;
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public RsaSsaPssPublicKey getPublicKey() {
+        return this.publicKey_ == null ? RsaSsaPssPublicKey.getDefaultInstance() : this.publicKey_;
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public ByteString getQ() {
+        return this.q_;
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public int getVersion() {
+        return this.version_;
+    }
+
+    @Override  // com.google.crypto.tink.proto.RsaSsaPssPrivateKeyOrBuilder
+    public boolean hasPublicKey() {
+        return this.publicKey_ != null;
+    }
+
+    private void mergePublicKey(RsaSsaPssPublicKey rsaSsaPssPublicKey0) {
+        rsaSsaPssPublicKey0.getClass();
+        if(this.publicKey_ != null && this.publicKey_ != RsaSsaPssPublicKey.getDefaultInstance()) {
+            this.publicKey_ = (RsaSsaPssPublicKey)((com.google.crypto.tink.proto.RsaSsaPssPublicKey.Builder)RsaSsaPssPublicKey.newBuilder(this.publicKey_).mergeFrom(rsaSsaPssPublicKey0)).buildPartial();
+            return;
+        }
+        this.publicKey_ = rsaSsaPssPublicKey0;
+    }
+
+    public static Builder newBuilder() {
+        return (Builder)RsaSsaPssPrivateKey.DEFAULT_INSTANCE.createBuilder();
+    }
+
+    public static Builder newBuilder(RsaSsaPssPrivateKey rsaSsaPssPrivateKey0) {
+        return (Builder)RsaSsaPssPrivateKey.DEFAULT_INSTANCE.createBuilder(rsaSsaPssPrivateKey0);
+    }
+
+    @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite
+    public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder newBuilderForType() {
+        return super.newBuilderForType();
+    }
+
+    public static RsaSsaPssPrivateKey parseDelimitedFrom(InputStream inputStream0) throws IOException {
+        return (RsaSsaPssPrivateKey)RsaSsaPssPrivateKey.parseDelimitedFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, inputStream0);
+    }
+
+    public static RsaSsaPssPrivateKey parseDelimitedFrom(InputStream inputStream0, ExtensionRegistryLite extensionRegistryLite0) throws IOException {
+        return (RsaSsaPssPrivateKey)RsaSsaPssPrivateKey.parseDelimitedFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, inputStream0, extensionRegistryLite0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(ByteString byteString0) throws InvalidProtocolBufferException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, byteString0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(ByteString byteString0, ExtensionRegistryLite extensionRegistryLite0) throws InvalidProtocolBufferException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, byteString0, extensionRegistryLite0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(CodedInputStream codedInputStream0) throws IOException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, codedInputStream0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(CodedInputStream codedInputStream0, ExtensionRegistryLite extensionRegistryLite0) throws IOException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, codedInputStream0, extensionRegistryLite0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(InputStream inputStream0) throws IOException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, inputStream0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(InputStream inputStream0, ExtensionRegistryLite extensionRegistryLite0) throws IOException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, inputStream0, extensionRegistryLite0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(ByteBuffer byteBuffer0) throws InvalidProtocolBufferException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, byteBuffer0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(ByteBuffer byteBuffer0, ExtensionRegistryLite extensionRegistryLite0) throws InvalidProtocolBufferException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, byteBuffer0, extensionRegistryLite0);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(byte[] arr_b) throws InvalidProtocolBufferException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, arr_b);
+    }
+
+    public static RsaSsaPssPrivateKey parseFrom(byte[] arr_b, ExtensionRegistryLite extensionRegistryLite0) throws InvalidProtocolBufferException {
+        return (RsaSsaPssPrivateKey)GeneratedMessageLite.parseFrom(RsaSsaPssPrivateKey.DEFAULT_INSTANCE, arr_b, extensionRegistryLite0);
+    }
+
+    public static Parser parser() {
+        return RsaSsaPssPrivateKey.DEFAULT_INSTANCE.getParserForType();
+    }
+
+    private void setCrt(ByteString byteString0) {
+        byteString0.getClass();
+        this.crt_ = byteString0;
+    }
+
+    private void setD(ByteString byteString0) {
+        byteString0.getClass();
+        this.d_ = byteString0;
+    }
+
+    private void setDp(ByteString byteString0) {
+        byteString0.getClass();
+        this.dp_ = byteString0;
+    }
+
+    private void setDq(ByteString byteString0) {
+        byteString0.getClass();
+        this.dq_ = byteString0;
+    }
+
+    private void setP(ByteString byteString0) {
+        byteString0.getClass();
+        this.p_ = byteString0;
+    }
+
+    private void setPublicKey(RsaSsaPssPublicKey rsaSsaPssPublicKey0) {
+        rsaSsaPssPublicKey0.getClass();
+        this.publicKey_ = rsaSsaPssPublicKey0;
+    }
+
+    private void setQ(ByteString byteString0) {
+        byteString0.getClass();
+        this.q_ = byteString0;
+    }
+
+    private void setVersion(int v) {
+        this.version_ = v;
+    }
+
+    @Override  // com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite
+    public com.google.crypto.tink.shaded.protobuf.MessageLite.Builder toBuilder() {
+        return super.toBuilder();
+    }
+}
+
